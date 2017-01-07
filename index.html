@@ -9,7 +9,9 @@
    
 
 <script type="text/javascript" >
-    function myfunction(){
+var state = 0;
+
+function myfunction(){
  
     var hiertext = document.getElementById("hiertext");
     if (hiertext.innerText == "egal") {
@@ -19,7 +21,13 @@
     }
     
     var bild = document.getElementById("bild1"); 
-    bild.innerHTML = "<img src='http://i.giphy.com/mWToZdKc0sl4k.gif'></img>"
+    if (state == 0){
+        bild.innerHTML = "<img src='http://i.giphy.com/mWToZdKc0sl4k.gif'></img>"
+        state = 1;
+    } else {
+        bild.innerHTML = "<img src='http://i.giphy.com/NNgLaLxRYgYUw.gif'></img>"
+        state = 0;
+    }
 
 }
 
