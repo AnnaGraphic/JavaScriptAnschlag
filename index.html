@@ -14,17 +14,14 @@ var state = 0;
 function myfunction(){
  
     var hiertext = document.getElementById("hiertext");
-    if (hiertext.innerText == "egal") {
-        hiertext.innerText = "nicht egal"
-    } else {
-        hiertext.innerText = "egal"
-    }
-    
     var bild = document.getElementById("bild1"); 
+    
     if (state == 0){
+        hiertext.innerText = "nicht egal"
         bild.innerHTML = "<img src='http://i.giphy.com/mWToZdKc0sl4k.gif'></img>"
         state = 1;
     } else {
+        hiertext.innerText = "egal"
         bild.innerHTML = "<img src='http://i.giphy.com/NNgLaLxRYgYUw.gif'></img>"
         state = 0;
     }
