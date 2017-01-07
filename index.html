@@ -11,18 +11,23 @@
 <script type="text/javascript" >
 var state = 0;
 
+function imglink(src){
+    return "<img src='" + src + "'></img>"    
+}
+
 function myfunction(){
  
     var hiertext = document.getElementById("hiertext");
     var bild = document.getElementById("bild1"); 
-    
+
     if (state == 0){
         hiertext.innerText = "nicht egal"
-        bild.innerHTML = "<img src='http://i.giphy.com/mWToZdKc0sl4k.gif'></img>"
+
+        bild.innerHTML = imglink("http://i.giphy.com/mWToZdKc0sl4k.gif")
         state = 1;
     } else {
         hiertext.innerText = "egal"
-        bild.innerHTML = "<img src='http://i.giphy.com/NNgLaLxRYgYUw.gif'></img>"
+        bild.innerHTML = imglink("http://i.giphy.com/NNgLaLxRYgYUw.gif")
         state = 0;
     }
 
