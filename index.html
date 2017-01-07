@@ -26,9 +26,15 @@ function myfunction(){
         bild.innerHTML = imglink("http://i.giphy.com/mWToZdKc0sl4k.gif")
         state = 1;
     } else {
-        hiertext.innerText = "egal"
-        bild.innerHTML = imglink("http://i.giphy.com/NNgLaLxRYgYUw.gif")
-        state = 0;
+        if (state == 1){
+            hiertext.innerText = "egal"
+            bild.innerHTML = imglink("http://i.giphy.com/NNgLaLxRYgYUw.gif")
+            state = 2;
+        } else {
+            hiertext.innerText = "ja"
+            bild.innerHTML = imglink("http://i.giphy.com/uCa2PBLWtcidy.gif")
+            state = 0;
+        }
     }
 
 }
