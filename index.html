@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Example Domain</title>
-<script type="text/javascript" src="myfunctiontest.js"></script>
+
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -36,12 +36,32 @@
             padding: 1em;
         }
     }
-    </style>    
+    </style>   
+
+<script type="text/javascript" >
+    function myfunction(){
+ 
+    var hiertext = document.getElementById("hiertext");
+
+
+    if (hiertext.innerText == "egal")
+    {
+        hiertext.innerText = "nicht egal"
+    }
+    else {
+    hiertext.innerText = "egal"
+    }
+
+
+
+}
+</script>
+
 </head>
 
 <body>
-<div  id="versuch">
-    <h1>Example Domain</h1>
+<div>
+    <h1 id="hiertext">Die magische Miesmuschel sagt:</h1>
 
     <p>This domain is established to be used for illustrative examples in documents. You may use this
     domain in examples without prior coordination or asking for permission.</p>
