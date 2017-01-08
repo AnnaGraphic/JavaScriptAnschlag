@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Example Domain</title>
+    <title>Magische Miesmuschel</title>
 
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -17,13 +17,14 @@ function imglink(src){
 
 function setstate(){
     state = state + 1;
-    if (state == 3){
+    if (state >= 4){
         state = 0;
     }
 }
 
 function myfunction(){
- 
+ // ja | nein | eines tages vielleicht | frag doch nocheinmal | 
+ //ich glaube eher nicht | gewiss | selbstverständlich | ich weiß es icht | letzteres | frag mich was leichteres | keineswegs | willst du das wirklich wissen | aber sicher |
     var hiertext = document.getElementById("hiertext");
     var bild = document.getElementById("bild1"); 
 
@@ -33,10 +34,15 @@ function myfunction(){
     } else if (state == 1){
         hiertext.innerText = "egal"
         bild.innerHTML = imglink("http://i.giphy.com/NNgLaLxRYgYUw.gif")
+    } else if (state == 2){
+        hiertext.innerText = "nein"
+        bild.innerHTML = imglink("http://i.giphy.com/NNgLaLxRYgYUw.gif")
+
    } else {
         hiertext.innerText = "ja"
         bild.innerHTML = imglink("http://i.giphy.com/uCa2PBLWtcidy.gif")
     }
+    
     setstate();
 }
 
@@ -51,7 +57,7 @@ function myfunction(){
             This domain is established to be used for illustrative examples in documents. You may use this
             domain in examples without prior coordination or asking for permission.
         </p>
-        <button onclick="myfunction();">do something</button>
+        <button onclick="myfunction();">frag' die Miesmuschel</button>
         <p><a href="http://www.iana.org/domains/example">More information...</a></p>
     </div>
     <div id="bild1"></div>
