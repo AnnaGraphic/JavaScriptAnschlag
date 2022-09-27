@@ -1,4 +1,58 @@
+//mit switch:
 
+
+var bild = document.getElementById("bild1"); 
+
+function miesmuschelSagt() {
+    var hiertext = document.getElementById("hiertext");
+    let zufallswert = Math.floor(Math.random() * 3);
+switch (zufallswert) {
+    case 0 :  
+        return "gewiss";
+        //bild = imglink("http://i.giphy.com/mWToZdKc0sl4k.gif")
+        break;
+    case 1 :  
+        return  "egal";
+        break;
+    case 2 :  
+        return  "nein";
+        break;
+    case 3 :  
+        return  "frag doch nocheinmal";
+        break;
+    case 4 :  
+        return  "selbstverständlich";
+        break;
+    case 5 :  
+        return  "aber sicher";
+        break;
+    case 6 :  
+        return  "frag mich was leichteres";
+            break;
+    case 7 :  
+        return  "gewiss";
+        break;
+    case 8 :  
+        return  "gewiss";
+        break;
+    case 9 :  
+        return  "gewiss";
+        break;
+    case 10 :  
+        return  "gewiss";
+        break;
+    case 11 :  
+        return  "gewiss";
+        break;
+    default:
+        console.log("iwas funzt nicht im switch")
+        break;
+}
+}
+
+console.log(miesmuschelSagt())
+
+/*
 var state = 0;
 
 function imglink(src){
@@ -11,6 +65,8 @@ function setstate(){
         state = 0;
     }
 }
+
+
 
 function myfunction(){
  //   |  | 
@@ -60,3 +116,4 @@ function myfunction(){
     setstate();
 }
 
+*/
