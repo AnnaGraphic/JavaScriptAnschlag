@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -7,21 +8,24 @@
     <title>Magische Miesmuschel</title>
     <link rel="stylesheet" href="stylesheet.css">
 
-<script src="miesmuschelscript.js">
-
-</script>
-
 </head>
-<body>
-    <div>
-        <h1 id="hiertext">Die magische Miesmuschel sagt:</h1>
 
-        <p>
-            Magische-Miesmuschel-Befragungsinstrument
-        </p>
- <!--       <button onclick="myfunction();">frag' die Miesmuschel</button> ; -->
-        <button onclick="miesmuschelSagt();">frag' die Miesmuschel</button>
+<body>
+
+    <h1>
+        Magische-Miesmuschel-Befragungsinstrument
+    </h1>
+    <button id="sendQuestion">frag' die Miesmuschel</button>
+    <p>
+        Die magische Miesmuschel sagt:
+    </p>
+
+    <div id="hierText"></div>
+    <div class="bild">
+        <div id="bild1"></div>
     </div>
-    <div id="bild1"></div>
+
+    <script src="miesmuschelscript.js"></script>
 </body>
+
 </html>
